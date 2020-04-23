@@ -1,0 +1,41 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+/* Add a black background color to the top navigation */
+.navbar {
+  background-color: #100E17;
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  display:inline-block;
+  margin-left: -35px;
+  margin-right: -15px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.html, body {
+  width: 100%; /* Full width */
+}
+
