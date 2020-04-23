@@ -1,24 +1,32 @@
-# README
+Enterprise App
+==============
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Powerful Software
+-----------------
 
-* Ruby version
+### Welcome to the repository
 
-* System dependencies
+My portfolio site is [my portfolio](https://www.linkedin.com/in/rayamable/).
 
-* Configuration
+> ## This could theoretically be very powerful software but right now it isn't. 
+>
+> But maybe give it a little while and see how it turns out. 
+>
+> *You never know.*
 
-* Database creation
+**Seriously**
 
-* Database initialization
+## Super amazing
 
-* How to run the test suite
++ Rapid development
+- Tested
+* 24/7 support
 
-* Services (job queues, cache servers, search engines, etc.)
+### Reasons to choose us
+1. Price
+2. Precision
+3. Performance
 
-* Deployment instructions
-
-* ...
+Code sample
+`puts 'Hello World!'`
