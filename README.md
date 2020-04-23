@@ -7,7 +7,7 @@ Powerful Software
 
 ### Welcome to the repository
 
-My portfolio site is [my portfolio](https://www.linkedin.com/in/rayamable/).
+My portfolio site is [my portfolio](https://github.com/rayamable).
 
 > ## This could theoretically be very powerful software but right now it isn't. 
 >
