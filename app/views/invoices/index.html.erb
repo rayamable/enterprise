@@ -1,6 +1,15 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Invoices</h1>
+<h1>Listing Invoices</h1>
+
+<div class="float-right range-query">
+  <%= form_tag invoices_path, method: :get do %>
+    <%= text_field_tag 'search[date_from]', @search.date_from %>
+    <%= text_field_tag 'search[date_to]', @search.date_to %>
+    <%= submit_tag 'Search', class: 'btn search-button' %>
+  <% end %>
+</div>
+<br><br><br>
 
 <div class="media">
   <div class="media-body">

@@ -8,5 +8,5 @@ Rails.application.routes.draw do
 
   resources :invoices
   
-  root to: 'welocme#index'
+  root to: 'welcome#index'
 end
