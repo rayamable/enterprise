@@ -18,7 +18,13 @@
       <a><%= link_to "FAQs", welcome_faq_path %></a>
       <a><%= link_to "Pricing", welcome_pricing_path %></a>
       <a><%= link_to "Invoices", invoices_path %></a>
-      <a><%= link_to "Login", root_path %></a> 
+
+      <% if current_user %>      
+        <a><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></a>
+      <% else %>
+        <a><%= link_to "Sign Up", new_user_registration_path %></a>
+        <a><%= link_to "Sign In", new_user_session_path %></a>
+      <% end %>
     </div>
     <br><br>
 
