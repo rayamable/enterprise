@@ -5,6 +5,14 @@ class CompaniesController < ApplicationController
   # GET /companies.json
   def index
     @companies = Company.all
+    
+    respond_to do |format|
+      # responds to both html and csv format
+      # passing of the block companies instance variable rendered as text to csv
+      format.html
+      format.csv {render text: @companies.to_csv}
+    end
+    
   end
 
   # GET /companies/1
@@ -63,7 +71,7 @@ class CompaniesController < ApplicationController
 
   def import
     Company.import(params[:file])
-    redirect_to companies_path, notice: "Company added successfully"
+    redirect_to companies_path, notice: "Companies added successfully"
   end
 
   private

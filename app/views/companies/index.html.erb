@@ -22,9 +22,9 @@
             <td><%= company.manager %></td>
             <td><%= company.status %></td>
             <td><%= company.terms %></td>
-            <td><%= link_to 'Show', company %></td>
-            <td><%= link_to 'Edit', edit_company_path(company) %></td>
-            <td><%= link_to 'Destroy', company, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Show', company, class: 'btn btn-light' %></td>
+            <td><%= link_to 'Edit', edit_company_path(company), class: 'btn btn-mini btn-success' %></td>
+            <td><%= link_to 'Destroy', company, method: :delete, class: 'btn btn-mini btn-danger', data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
@@ -39,7 +39,11 @@
 
 <%= form_tag import_companies_path, multipart: true do %>
   <%= file_field_tag :file %>
-  <%= submit_tag "Upload Companies" %>
+  <%= submit_tag "Upload Companies", class: 'btn btn-light' %>
 <% end %>
 <br>
+
+<h3>Download File</h3>
+<%= link_to "Report", companies_path(format: "csv"), class: 'btn btn-light' %>
+
 <%= link_to 'New Company', new_company_path %>
