@@ -10,6 +10,8 @@
   </head>
 
   <body>
+
+  </div>
     <div class="navbar">
       <a><%= link_to "Home", root_path %></a> 
       <a><%= link_to "About Us", welcome_about_path %></a>
@@ -44,7 +46,7 @@
         <%= flash[:alert] %>
     </div>
   <% end %>
-
+  
     <%= yield %>
   
   </body>
